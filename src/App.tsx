@@ -8,11 +8,30 @@ function App() {
     age: number
   }
 
-  const student : StudentType= {
-    name: "abubakar",
-    age:25
+  type employeeType = {
+    employeeId: number,
+    department: string
   }
-  console.log(student);
+
+
+
+  // JavaScript Example
+const person:StudentType = {
+  name: "John",
+  age: 30
+};
+
+const employee:employeeType = {
+  employeeId: 1234,
+  department: "HR"
+};
+
+const personEmployee = {
+  ...person,
+  ...employee
+};
+
+console.log(personEmployee);
   
 
   return (
