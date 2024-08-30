@@ -13,6 +13,8 @@ function App() {
     department: string
   }
 
+const increment = ( orpFn:(x: number, y:number)=>number, x:number, y:number)=> {return orpFn(x,y)}
+console.log(increment((x,y)=>x+y,10,20));
 
 
   // JavaScript Example
